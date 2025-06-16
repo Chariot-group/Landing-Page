@@ -78,9 +78,9 @@ export function Contact() {
     }
 
     return (
-        <section className="container px-6 w-full mx-auto mt-20 mb-20 gap-10 flex flex-col" id="contact">
+        <section className="container px-6 w-full mx-auto mt-20 mb-20" id="contact">
             <h3 className="text-3xl ">{"Contact"}</h3>
-            <div className="grid lg:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-6 mt-6">
                 <Card className="w-full h-full bg-background p-6">
                     <div className="flex flex-col gap-3">
                         <h4 className="text-2xl font-medium">{"Nous contacter"}</h4>

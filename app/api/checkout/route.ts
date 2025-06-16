@@ -7,13 +7,12 @@ export async function POST(req: NextRequest) {
   try {
 
     const body = await req.json();
-    const { productId, priceId, pattern, colors, specification } = body;
+    const { productId, priceId } = body;
 
     if (!productId) {
       return Response.json({ error: 'Missing productId' }, { status: 400 });
     }
 
-    const product = await stripe.products.retrieve(productId);
     const prices = await stripe.prices.list({ product: productId });
 
     const selectedPrice = prices.data.find(price => price.id === priceId);
@@ -22,7 +21,6 @@ export async function POST(req: NextRequest) {
       return Response.json({ error: 'Invalid priceId' }, { status: 400 });
     }
 
-    const name: string = `${product.name} ${selectedPrice.nickname && `- ${selectedPrice.nickname}`}`;
     const unitAmount: number = selectedPrice.unit_amount || -1;
 
     if (unitAmount < 0) {
@@ -31,40 +29,31 @@ export async function POST(req: NextRequest) {
 
 
     const session = await stripe.checkout.sessions.create({
-        mode: 'payment',
+        mode: 'subscription',
         billing_address_collection: 'required',
-        shipping_address_collection: {
-            allowed_countries: ['FR'],
-        },
         line_items: [
             {
-                price_data: {
-                    currency: 'eur',
-                    product_data: {
-                        name: name,
-                        description: product.description || '',
-                        images: product.images || [],
-                        metadata: {
-                            pattern: pattern,
-                            colors: JSON.stringify(colors),
-                            specification: specification,
-                        },
-                    },
-                    unit_amount: unitAmount,
-                    tax_behavior: 'exclusive',
-                },
-                adjustable_quantity: {
-                    enabled: true,
-                    minimum: 1,
-                },
+                price: selectedPrice.id,
                 quantity: 1,
             },
         ],
-        invoice_creation: {
-            enabled: true,
-        },
         success_url: `${process.env.NEXT_PUBLIC_APP_URL}/success/{CHECKOUT_SESSION_ID}`,
-        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/cancel`,
+        cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/`,
+        custom_fields: [
+          {
+            key: 'pseudo',
+            label: {
+              type: 'custom',
+              custom: 'Pseudo',
+            },
+            type: 'text',
+            text: {
+              minimum_length: 1,
+              maximum_length: 50,
+            },
+            optional: false,
+          }
+        ],
     });
     
     return Response.json({ sessionId: session.id });

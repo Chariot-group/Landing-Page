@@ -8,6 +8,8 @@ import Stripe from 'stripe';
 import { Button } from "../ui/button";
 import { loadStripe } from '@stripe/stripe-js';
 import { CheckoutService } from "@/services/Checkout";
+import { Switch } from "../ui/switch";
+import { Label } from "../ui/label";
 
 export function Pricing() {
 
@@ -29,6 +31,7 @@ export function Pricing() {
 
     const handleCheckout = async (product: IProduct, price: any) => {
 
+        console.log("Checkout for product:", product.name, "with price ID:", price);
         if(!product) return;
         const res = await CheckoutService.getCheckout(
             product?.id,
@@ -41,10 +44,19 @@ export function Pricing() {
         stripe?.redirectToCheckout({ sessionId: data.sessionId });
     };
 
+    const [isByMounth, setIsByMounth] = useState<boolean>(false);
+
     return (
         <section className="container px-6 w-full mx-auto mt-20 mb-20" id="pricing">
-            <h3 className="text-3xl ">{"Nos offres"}</h3>
-            <div className="grid lg:grid-cols-2 gap-20 p-10">
+            <div className="flex flex-row gap-2 mt-6">
+                <h3 className="text-3xl ">{"Nos offres"}</h3>
+                <div className="flex items-center gap-2 ml-auto">
+                    <Label htmlFor="airplane-mode">Plan annuel</Label>
+                    <Switch id="airplane-mode" checked={isByMounth} onCheckedChange={() => setIsByMounth(!isByMounth)} />
+                    <Label htmlFor="airplane-mode">Plan mensuel</Label>
+                </div>
+            </div>
+            <div className="grid lg:grid-cols-2 gap-20 mt-6">
                 {hasLoading ? (
                     <div className="flex justify-center items-center h-96">
                         <span className="text-lg">Chargement...</span>
@@ -58,7 +70,15 @@ export function Pricing() {
                             <Card key={product.id} className="p-6 flex items-center flex-col gap-7">
                                 <div className="flex flex-col items-center gap-2">
                                     <h4 className="text-2xl font-medium">{product.name.toUpperCase()}</h4>
-                                    <span>{byMouth.unit_amount! / 100}€/mois</span>
+                                    {
+                                        isByMounth ?
+                                        <span>{byMouth.unit_amount! / 100}€/mois</span> :
+                                        <div className="flex justify-center gap-2">
+                                            <span className="line-through">{(byMouth.unit_amount! / 100)*12}</span>
+                                            <span className="flex justify-center">{byYear.unit_amount! / 100}€/an</span>
+                                        </div>
+                                    }
+                                    
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     {product.marketing_features.map((feature, index) => (
@@ -80,15 +100,9 @@ export function Pricing() {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="flex flex-col gap-2">
-                                    <p>Choissisez l'abonnement annuel et obtenez 2 mois offerts :</p>
-                                    <div className="flex justify-center gap-2">
-                                        <span className="line-through">{(byMouth.unit_amount! / 100)*12}</span>
-                                        <span className="flex justify-center">{byYear.unit_amount! / 100}€/an</span>
-                                    </div>
-                                </div>
+                                
                                 <div className="flex justify-center w-full">
-                                    <Button size={"lg"}>
+                                    <Button size={"lg"} onClick={() => handleCheckout(product, isByMounth ? byMouth.id : byYear.id)} className="w-full">
                                         Souscrire à l'offre {product.name.toUpperCase()}
                                     </Button>
                                 </div>

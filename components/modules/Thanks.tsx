@@ -49,7 +49,7 @@ export function Thanks() {
     return (
         <section className="container px-6 w-full mx-auto mt-20 mb-20" id="thanks">
             <h3 className="text-3xl">{"Remerciements"}</h3>
-            <div className="flex flex-col gap-2 p-10">
+            <div className="flex flex-col gap-2 mt-6">
                 <p>Rien de tout cela n’aurait été possible sans le talent, l’énergie et la générosité de celles et ceux qui ont contribué, de près ou de loin, à faire grandir ce projet.</p>
                 <p>Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui nous ont soutenus, conseillés, challengés ou inspirés. Chaque geste, chaque idée, chaque mot d'encouragement a compté.</p>
                 <p>Voici celles et ceux que nous tenons à remercier, sincèrement.</p>

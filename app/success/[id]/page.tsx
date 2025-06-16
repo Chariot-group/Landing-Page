@@ -28,9 +28,9 @@ export default function SuccessPage() {
 
     return (
         <section className="flex flex-col items-center h-full w-full">
-            <div className="flex flex-col items-center justify-center h-screen w-full">
+            <div className="flex flex-col items-center justify-center h-[89vh] w-full">
                 <h1 className="text-4xl font-bold mb-4">Tout s'est bien passé, bienvenu sur Chariot !</h1>
-                <p className="text-lg mt-2">Tu vas recevoir un email à xxx pour activer ton compte.</p>
+                <p className="text-lg mt-2">Tu vas recevoir un email à <span className="font-medium">{sessionData.customer_details?.email}</span> pour activer ton compte.</p>
                 <p className="text-lg mt-2">Régale toi avec CHARIOT !</p>
             </div>
         </section>
