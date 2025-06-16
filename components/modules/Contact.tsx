@@ -150,7 +150,7 @@ export function Contact() {
                     </div>
                 </Card>
                 <div className="flex flex-col gap-6">
-                    <Card className="w-full h-full bg-background p-6">
+                    <Card className="w-full bg-background p-6">
                         <div className="flex flex-col gap-3">
                             <h4 className="text-2xl font-medium">Quoi nous dire ?</h4>
                             <div className="flex flex-col gap-1">
@@ -159,7 +159,7 @@ export function Contact() {
                             </div>
                         </div>
                     </Card>
-                    <Card className="w-full h-full bg-background p-6">
+                    <Card className="w-full bg-background p-6">
                         <div className="flex flex-col gap-3">
                             <h4 className="text-2xl font-medium">Délais de réponse</h4>
                             <div className="flex flex-col gap-1">
