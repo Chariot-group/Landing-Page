@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
 import { MenuIcon } from "lucide-react";
+import Link from "next/link";
 
 
 interface items {
@@ -37,9 +38,11 @@ export default function Header() {
     return (
         <section className="border-b-3 border-primary py-4 bg-card fixed top-0 left-0 w-full z-50">
             <nav className="container px-6 mx-auto flex justify-between items-center">
-                <h1 className="text-3xl font-bold tracking-wide cursor-pointer" onClick={() => scrollToSection('hero')}>
-                    CHARIOT
-                </h1>
+                <Link href={"/"}>
+                    <h1 className="text-3xl font-bold tracking-wide cursor-pointer">
+                        CHARIOT
+                    </h1>
+                </Link>
                 <div className="flex items-center gap-4 xl:gap-8">
                     <ul className="hidden xl:flex items-center gap-8">
                         {itemsButtons.map((item, index) => (
@@ -60,8 +63,10 @@ export default function Header() {
                         </SheetTrigger>
                         <SheetContent side="left">
                             <SheetHeader>
-                                <SheetTitle className="cursor-pointer" onClick={() => scrollToSection('hero', isSheetOpen, setIsSheetOpen)}>{"CHARIOT"}</SheetTitle>
-                                <SheetDescription>{"Votre outil de gestion de jeu de rôle"}</SheetDescription>
+                                <Link href={"/"}>
+                                    <SheetTitle className="cursor-pointer">{"CHARIOT"}</SheetTitle>
+                                    <SheetDescription>{"Votre outil de gestion de jeu de rôle"}</SheetDescription>
+                                </Link>
                             </SheetHeader>
                             <ul className="flex flex-col gap-2 mt-4">
                                 {itemsButtons.map((item, index) => (

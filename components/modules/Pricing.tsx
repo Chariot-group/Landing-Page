@@ -4,8 +4,10 @@ import { IProduct } from "@/models/IProduct";
 import { ProductService } from "@/services/Procucts";
 import { useEffect, useState } from "react";
 import { Card } from "../ui/card";
-import Stripe from "stripe";
+import Stripe from 'stripe';
 import { Button } from "../ui/button";
+import { loadStripe } from '@stripe/stripe-js';
+import { CheckoutService } from "@/services/Checkout";
 
 export function Pricing() {
 
@@ -24,6 +26,20 @@ export function Pricing() {
             )))
             .then(() => setLoading(false));
     }, []);
+
+    const handleCheckout = async (product: IProduct, price: any) => {
+
+        if(!product) return;
+        const res = await CheckoutService.getCheckout(
+            product?.id,
+            price
+        );
+
+        const data = await res.json();
+
+        const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+        stripe?.redirectToCheckout({ sessionId: data.sessionId });
+    };
 
     return (
         <section className="container px-6 w-full mx-auto mt-20 mb-20" id="pricing">
