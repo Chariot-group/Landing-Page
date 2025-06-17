@@ -102,9 +102,17 @@ export function Pricing() {
                                 </div>
                                 
                                 <div className="flex justify-center w-full">
-                                    <Button size={"lg"} onClick={() => handleCheckout(product, isByMounth ? byMouth.id : byYear.id)} className="w-full">
-                                        Souscrire à l'offre {product.name.toUpperCase()}
-                                    </Button>
+                                    {
+                                        process.env.NEXT_PUBLIC_STATE === "soft_opening" ? 
+                                            <div className="items-center justify-center cursor-pointer flex w-full bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6">
+                                                <span>Prochainement ...</span>
+                                            </div>
+                                        :
+                                            <Button size={"lg"} onClick={() => handleCheckout(product, isByMounth ? byMouth.id : byYear.id)} className="w-full">
+                                                Souscrire à l'offre {product.name.toUpperCase()}
+                                            </Button>
+                                    }
+                                    
                                 </div>
                             </Card>
                         )
