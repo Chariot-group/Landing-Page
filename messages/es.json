@@ -107,6 +107,14 @@
             "¡Gracias por su paciencia!"
         ]
     },
+    "success": {
+        "title": "Todo ha ido bien, ¡bienvenido a Chariot!",
+        "content": [
+            "Recibirá un correo electrónico en ",
+            " para activar su cuenta."
+        ],
+        "thanks": "¡Disfrute de CHARIOT!"
+    },
     "footer": {
         "CGV": "TCG",
         "CGU": "UGC"

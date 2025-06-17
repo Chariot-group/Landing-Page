@@ -107,6 +107,14 @@
             "Thank you for your patience!"
         ]
     },
+    "success": {
+        "title": "Everything went well, welcome to Chariot!",
+        "content": [
+            "You will receive an email at ",
+            " to activate your account."
+        ],
+        "thanks": "Enjoy CHARIOT!"
+    },
     "footer": {
         "CGV": "GTC",
         "CGU": "GTCU"

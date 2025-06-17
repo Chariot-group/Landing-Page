@@ -10,6 +10,7 @@ import Header from "@/components/common/Header";
 import ToastContainer from "@/components/common/ToastContainer";
 import { Footer } from "@/components/common/Footer";
 import { Locale } from "@/i18n/locales";
+import RecaptchaScript from "@/components/modules/RecaptchaScript";
 
 
 const geistSans = Geist({
@@ -93,6 +94,7 @@ export default async function LocalLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <RecaptchaScript lang={locale as Locale} />
         <NextIntlClientProvider messages={messages}>
           <header>
             <Header />

@@ -107,6 +107,14 @@
             "Merci de votre patience !"
         ]
     },
+    "success": {
+        "title": "Tout s'est bien passé, bienvenu sur Chariot !",
+        "content": [
+            "Tu vas recevoir un email à ",
+            " pour activer ton compte."
+        ],
+        "thanks": "Régale toi avec CHARIOT !"
+    },
     "footer": {
         "CGV": "CGV",
         "CGU": "CGU"

@@ -1,11 +1,15 @@
 "use client";
 
-import { CheckoutService } from "@/src/services/Checkout";
+import { CheckoutService } from "@/services/Checkout";
+import { Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Stripe from "stripe";
 
 export default function SuccessPage() {
+
+    const t = useTranslations("success");
 
     const params = useParams();
     const router = useRouter();
@@ -23,15 +27,15 @@ export default function SuccessPage() {
     }, [params.id, router]);
 
     if (!sessionData) {
-        return <p>Chargement...</p>;
+        return <div className="h-screen flex items-center justify-center"><Loader2 className="animate-spin"/></div>;
     }
 
     return (
         <section className="flex flex-col items-center h-full w-full">
-            <div className="flex flex-col items-center justify-center h-[89vh] w-full">
-                <h1 className="text-4xl font-bold mb-4">Tout s'est bien passé, bienvenu sur Chariot !</h1>
-                <p className="text-lg mt-2">Tu vas recevoir un email à <span className="font-medium">{sessionData.customer_details?.email}</span> pour activer ton compte.</p>
-                <p className="text-lg mt-2">Régale toi avec CHARIOT !</p>
+            <div className="flex flex-col items-center justify-center h-screen w-full">
+                <h1 className="text-4xl font-bold mb-4">{t("title")}</h1>
+                <p className="text-lg mt-2">{t.raw('content')[0]} <a className="font-medium" href={`https://mail.google.com/mail/u/?authuser=${sessionData.customer_details?.email}`}>{sessionData.customer_details?.email}</a> {t.raw('content')[1]}</p>
+                <p className="text-lg mt-2">{t("thanks")}</p>
             </div>
         </section>
     );
