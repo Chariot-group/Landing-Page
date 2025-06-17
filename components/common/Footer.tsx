@@ -28,25 +28,16 @@ export function Footer() {
         <section className="border-t-3 border-primary py-4 bg-card w-full z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="w-full flex flex-col gap-2">
-                    <span className="text-sm">Rejoidnez-nous sur les réseaux sociaux :</span>
-                    <div className="flex items-center gap-2">
-                        {
-                            networks.map((network) => (
-                                <a className="flex flex-col items-center gap-2" key={network.name} href={network.url} target="_blank" rel="noopener noreferrer">
-                                    {network.icon}
-                                </a>
-                            ))
-                        }
-                    </div>
+                    
                 </div>
                 <div className="w-full flex items-center gap-2 justify-center">
                     <h1 className="text-3xl font-bold tracking-wide cursor-pointer" onClick={() => scrollToSection("hero")}>
                         CHARIOT
                     </h1>
                 </div>
-                <div className="w-full flex flex-col items-center gap-2 justify-left items-end">
-                    <a>CGV</a>
-                    <a>CGU</a>
+                <div className="w-full flex flex-col gap-2 justify-left items-end">
+                    <a href="#" target="_blank" className="hover:underline underline-offset-2">CGV</a>
+                    <a href="#" target="_blank" className="hover:underline underline-offset-2">CGU</a>
                 </div>
             </div>
         </section>
