@@ -1,27 +1,6 @@
 "use client";
 
-import { JSX } from "react";
 import { scrollToSection } from "./Header";
-import { IconBrandInstagram, IconBrandTiktok } from "@tabler/icons-react";
-
-interface Netword {
-    name: string;
-    url: string;
-    icon: JSX.Element
-}
-
-const networks: Netword[] = [
-    {
-        name: "Instagram",
-        url: "https://www.instagram.com/chariot/",
-        icon: <IconBrandInstagram stroke={2} />
-    },
-    {
-        name: "Tiktok",
-        url: "https://www.tiktok.com/@chariot",
-        icon: <IconBrandTiktok stroke={2} />
-    }
-];
 
 export function Footer() {
     return (
