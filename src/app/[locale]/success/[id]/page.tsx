@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckoutService } from "@/services/Checkout";
+import { CheckoutService } from "@/src/services/Checkout";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Stripe from "stripe";

@@ -3,22 +3,24 @@
 import { IProduct } from "@/models/IProduct";
 import { ProductService } from "@/services/Procucts";
 import { useEffect, useState } from "react";
-import { Card } from "../ui/card";
+import { Card } from "@/components/ui/card";
 import Stripe from 'stripe';
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { loadStripe } from '@stripe/stripe-js';
 import { CheckoutService } from "@/services/Checkout";
-import { Switch } from "../ui/switch";
-import { Label } from "../ui/label";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
+import { Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Pricing() {
+
+    const t = useTranslations("pricing");
 
     const [hasLoading, setLoading] = useState<boolean>(true);
     const [products, setProducts] = useState<IProduct[]>([]);
 
     useEffect(() => {
-        setLoading(true);
-
         ProductService.getProducts()
             .then((data: any) => setProducts(data.data.sort((a: IProduct, b: IProduct) => {
                 if (a.prices[0].unit_amount! < b.prices[0].unit_amount!) return -1;
@@ -31,7 +33,6 @@ export function Pricing() {
 
     const handleCheckout = async (product: IProduct, price: any) => {
 
-        console.log("Checkout for product:", product.name, "with price ID:", price);
         if(!product) return;
         const res = await CheckoutService.getCheckout(
             product?.id,
@@ -49,21 +50,21 @@ export function Pricing() {
     return (
         <section className="container px-6 w-full mx-auto mt-20 mb-20" id="pricing">
             <div className="flex flex-row gap-2 mt-6">
-                <h3 className="text-3xl ">{"Nos offres"}</h3>
+                <h3 className="text-3xl ">{t('title')}</h3>
                 <div className="flex items-center gap-2 ml-auto">
-                    <Label htmlFor="airplane-mode">Plan annuel</Label>
+                    <Label htmlFor="airplane-mode">{t('plans.annual')}</Label>
                     <Switch id="airplane-mode" checked={isByMounth} onCheckedChange={() => setIsByMounth(!isByMounth)} />
-                    <Label htmlFor="airplane-mode">Plan mensuel</Label>
+                    <Label htmlFor="airplane-mode">{t('plans.monthly')}</Label>
                 </div>
             </div>
             <div className="grid lg:grid-cols-2 gap-20 mt-6">
                 {hasLoading ? (
-                    <div className="flex justify-center items-center h-96">
-                        <span className="text-lg">Chargement...</span>
+                    <div className="flex justify-center items-center col-span-2">
+                        <Loader2 className="animate-spin" />
                     </div>
                 ) : (
                     products.map((product: IProduct) => {
-                        let byMouth: Stripe.Price = product.prices.filter((price) => price.recurring?.interval === "month")[0];
+                        let byMonth: Stripe.Price = product.prices.filter((price) => price.recurring?.interval === "month")[0];
                         let byYear: Stripe.Price = product.prices.filter((price) => price.recurring?.interval === "year")[0];
 
                         return (
@@ -72,10 +73,10 @@ export function Pricing() {
                                     <h4 className="text-2xl font-medium">{product.name.toUpperCase()}</h4>
                                     {
                                         isByMounth ?
-                                        <span>{byMouth.unit_amount! / 100}€/mois</span> :
+                                        <span>{byMonth.unit_amount! / 100}€/{t('byMonth')}</span> :
                                         <div className="flex justify-center gap-2">
-                                            <span className="line-through">{(byMouth.unit_amount! / 100)*12}</span>
-                                            <span className="flex justify-center">{byYear.unit_amount! / 100}€/an</span>
+                                            <span className="line-through">{(byMonth.unit_amount! / 100)*12}</span>
+                                            <span className="flex justify-center">{byYear.unit_amount! / 100}€/{t('byYear')}</span>
                                         </div>
                                     }
                                     
@@ -105,11 +106,11 @@ export function Pricing() {
                                     {
                                         process.env.NEXT_PUBLIC_STATE === "soft_opening" ? 
                                             <div className="items-center justify-center cursor-pointer flex w-full bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md px-6">
-                                                <span>Prochainement ...</span>
+                                                <span>{t('button.comingSoon')}</span>
                                             </div>
                                         :
-                                            <Button size={"lg"} onClick={() => handleCheckout(product, isByMounth ? byMouth.id : byYear.id)} className="w-full">
-                                                Souscrire à l'offre {product.name.toUpperCase()}
+                                            <Button size={"lg"} onClick={() => handleCheckout(product, isByMounth ? byMonth.id : byYear.id)} className="w-full">
+                                                {t('button.subscribe', {"name": product.name.toUpperCase()})}
                                             </Button>
                                     }
                                     

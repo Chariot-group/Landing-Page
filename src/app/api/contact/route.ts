@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     const data = await response.json()
 
     if (!data.success) {
-        return NextResponse.json({ success: false, message: 'Échec de la vérification reCAPTCHA' })
+        return NextResponse.json({ success: false, message: 'reCaptchaInvalid' })
     }
 
     const transporter = nodemailer.createTransport({
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
         await transporter.sendMail(mailOptions);
     } catch(e: unknown) {
         console.log(e);
-        return NextResponse.json({ success: false, message: "Impossible d'envoyer le message. Réessayez plus tard." });
+        return NextResponse.json({ success: false, message: "serverError" });
     }
 
     return NextResponse.json({

@@ -1,23 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
-import { Button } from "../ui/button";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/common/LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 
 interface items {
     libelle: string,
     id: string
 }
-const itemsButtons: items[] = [
-    {libelle: 'À propos', id: 'about'},
-    {libelle: 'Nos offres', id: 'pricing'},
-    {libelle: 'L\'équipe', id: 'team'},
-    {libelle: 'Remerciements', id: 'thanks'},
-    {libelle: 'Contact', id: 'contact'}
-];
 
 export function scrollToSection(section: string, isSheetOpen: boolean = false, setIsSheetOpen?: (open: boolean) => void) {
     const el = document.getElementById(section);
@@ -32,6 +27,16 @@ export function scrollToSection(section: string, isSheetOpen: boolean = false, s
 }
 
 export default function Header() {
+
+    const t = useTranslations("header");
+
+    const itemsButtons: items[] = [
+        {libelle: t("buttons.about"), id: 'about'},
+        {libelle: t("buttons.pricing"), id: 'pricing'},
+        {libelle: t("buttons.team"), id: 'team'},
+        {libelle: t("buttons.thanks"), id: 'thanks'},
+        {libelle: t("buttons.contact"), id: 'contact'}
+    ];
 
     const [isSheetOpen, setIsSheetOpen] = useState(false);
 
@@ -65,7 +70,7 @@ export default function Header() {
                             <SheetHeader>
                                 <Link href={"/"}>
                                     <SheetTitle className="cursor-pointer">{"CHARIOT"}</SheetTitle>
-                                    <SheetDescription>{"Votre outil de gestion de jeu de rôle"}</SheetDescription>
+                                    <SheetDescription>{t("subtitle")}</SheetDescription>
                                 </Link>
                             </SheetHeader>
                             <ul className="flex flex-col gap-2 mt-4">
@@ -81,6 +86,7 @@ export default function Header() {
                             </ul>
                         </SheetContent>
                     </Sheet>
+                    <LanguageSwitcher />
                 </div>
             </nav>
         </section>

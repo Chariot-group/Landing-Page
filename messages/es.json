@@ -1,0 +1,114 @@
+{
+    "LocaleSwitcher": {
+        "locale": "{locale, select, fr {🇫🇷 Francés} en {🇬🇧 Inglés} es {🇪🇸 Español} other {🏴‍☠️ Desconocido}}",
+        "flag": "{locale, select, fr {🇫🇷} en {🇬🇧} es {🇪🇸} other {🏴‍☠️}}"
+    },
+    "header": {
+        "subtitle": "Su herramienta de gestión de juegos de rol",
+        "buttons": {
+            "about": "Acerca de",
+            "pricing": "Nuestras ofertas",
+            "team": "El equipo",
+            "thanks": "Reconocimientos",
+            "contact": "Contacto"
+        }
+    },
+    "hero": {
+        "title": "Deje fluir su creatividad, tome las riendas de sus campañas y ¡diviértase!",
+        "cta": "Descubre nuestras ofertas"
+    },
+    "about": {
+        "title": "Acerca de",
+        "description": "¿Cansado de hacer malabarismos con distintas herramientas para organizar sus campañas?",
+        "content": [
+            "Descubra CHARIOT, su nueva herramienta de gestión integral. Vive tus campañas más intensamente centralizando todas las funciones que necesitas para llevarlas a cabo sin problemas.",
+            "Gracias a su intuitiva interfaz, CHARIOT te permite gestionar personajes, tanto jugadores como no jugadores, acceder a sus estadísticas, organizar grupos y batallas con un simple movimiento, optimizar las batallas con el rastreador initiave, y guardar de forma sencilla los HP de los personajes durante y después de una batalla."
+        ]
+    },
+    "pricing": {
+        "title": "Nuestras ofertas",
+        "plans": {
+            "annual": "Plan anual",
+            "monthly": "Plan mensual"
+        },
+        "button": {
+            "comingSoon": "Pronto disponible",
+            "subscribe": "Suscribirse a la oferta {name}"
+        },
+        "byYear": "año",
+        "byMonth": "mes"
+    },
+    "team": {
+        "title": "El equipo",
+        "developer": "Programador",
+        "description": [
+            "CHARIOT son ante todo dos amigos unidos por una pasión común por los juegos de rol. Juntos hemos experimentado la dificultad de organizar campañas, utilizando diversas herramientas, desde páginas web hasta papel y lápiz. Y un día nos decidimos: íbamos a crear nuestra propia herramienta para facilitar la organización de nuestras campañas. Así nació CHARIOT, una herramienta de gestión única creada por jugadores, para jugadores.",
+            "Esperamos que CHARIOT le ayude y que lo disfrute tanto como nosotros.",
+            "¡Hora de la aventura!"
+        ],
+        "joinUs": "Únete a la aventura CHARIOT"
+    },
+    "thanks": {
+        "title": "Reconocimientos",
+        "content": [
+            "Nada de esto habría sido posible sin el talento, la energía y la generosidad de todos los que han contribuido, de un modo u otro, a hacer realidad este proyecto.",
+            "Queremos expresar nuestra más profunda gratitud a todos los que nos han apoyado, aconsejado, desafiado o inspirado. Cada gesto, cada idea, cada palabra de aliento han contado.",
+            "Éstas son las personas a las que queremos dar las gracias más sinceramente."
+        ],
+        "jobs": {
+            "developer": "Programador",
+            "designer": "Diseñador UI/UX",
+            "marketer": "Comercializador",
+            "illustrator": "Ilustrador"
+        },
+        "descriptions": {
+            "JL": "Contamos con el apoyo de Jovis Lélue, que contribuyó a las fases iniciales de diseño y prestó una ayuda inestimable en materia de DevOps y gestión de la configuración.",
+            "EC": "Nos beneficiamos de la experiencia de Emma Caroff en el diseño gráfico y la creación de maquetas durante las primeras iteraciones del proyecto.",
+            "MV": "Morgane Vigier nos ayudó a crear nuestros primeros carteles publicitarios.",
+            "LL": "Léane Loubère nos ayudó mucho a crear las ilustraciones necesarias para ciertas partes de la aplicación."
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "errors": {
+            "emailRequired": "Debe introducir una dirección de correo electrónico.",
+            "emailInvalid": "Debe introducir una dirección de correo electrónico válida.",
+            "objectRequired": "Debe introducir un asunto. (5 caracteres mínimo)",
+            "contentRequired": "Su correo electrónico debe contener un mensaje. (25 caracteres mínimo)",
+            "reCaptchaRequired": "Debe validar el reCAPTCHA.",
+            "reCaptchaInvalid": "La comprobación ReCAPTCHA falla.",
+            "serverError": "No se ha podido enviar el mensaje. Vuelva a intentarlo más tarde."
+        },
+        "success": "Su mensaje ha sido enviado. Le responderemos lo antes posible.",
+        "contactUs": "Contacte con nosotros",
+        "form": {
+            "labels": {
+                "email": "E-mail",
+                "object": "Objeto",
+                "content": "Contenido"
+            },
+            "placeholders": {
+                "email": "Su e-mail",
+                "object": "Asunto del mensaje",
+                "content": "Su mensaje"
+            },
+            "submit": "Enviar",
+            "submitLoading": "Enviando..."
+        },
+        "whatToSay": "¿Qué decirnos?",
+        "whatToSayContent": [
+            "¿Tiene alguna pregunta, sugerencia o comentario?",
+            "No dude en ponerse en contacto con nosotros: ¡estamos aquí para ayudarle!"
+        ],
+        "responseTime": "Tiempos de respuesta",
+        "responseTimeContent": [
+            "Haremos todo lo posible por responderle lo antes posible.",
+            "Tenga en cuenta, no obstante, que podemos tardar algún tiempo en ponernos en contacto con usted.",
+            "¡Gracias por su paciencia!"
+        ]
+    },
+    "footer": {
+        "CGV": "TCG",
+        "CGU": "UGC"
+    }
+}

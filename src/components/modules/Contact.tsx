@@ -1,21 +1,23 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import { Button } from "../ui/button";
-import { Card } from "../ui/card";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/form";
-import { Textarea } from "../ui/textarea";
-import { Input } from "../ui/input";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
 import z from "zod";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import ReCAPTCHA from 'react-google-recaptcha'
 import axios from "axios";
-import { toast } from 'react-hot-toast';
 import { useToast } from "@/hooks/useToast";
+import { useTranslations } from "next-intl";
 
 export function Contact() {
+
+    const t = useTranslations("contact");
 
     const {success, error} = useToast();
 
@@ -25,11 +27,12 @@ export function Contact() {
 
     const FormSchema = z.object({
         email: z.string()
-            .email("Vous devez renseigner un e-mail valide."),
+            .min(1, { message: t('errors.emailRequired') })
+            .email(t('errors.emailInvalid')),
         object: z.string()
-            .min(5, { message: "Vous devez renseigner un objet. (5 caractères minimum)" }),
+            .min(5, { message: t('errors.objectRequired') }),
         content: z.string()
-            .min(25, { message: "Votre e-mail doit contenir un message. (25 caractères minimum)" })
+            .min(25, { message: t('errors.contentRequired') })
     });
 
     const form = useForm<z.infer<typeof FormSchema>>({
@@ -46,7 +49,7 @@ export function Contact() {
 
         const token = recaptchaRef.current?.getValue()
         if (!token) {
-            setReCaptchaError("Veuillez valider le reCAPTCHA.");
+            setReCaptchaError(t('errors.reCaptchaRequired'));
             setSubmit(false);
             return;
         }
@@ -62,7 +65,7 @@ export function Contact() {
         });
 
         if(response.data?.success === true){
-            success("Je vous recontacte le plus vite possible.");
+            success(t("success"));
 
             form.reset({
                 email: "",
@@ -70,7 +73,7 @@ export function Contact() {
                 content: ""
             });
         }else{
-            error(response.data?.message);
+            error(t(`errors.${response.data?.message}`));
         }
 
         setReCaptchaError(null);
@@ -79,11 +82,11 @@ export function Contact() {
 
     return (
         <section className="container px-6 w-full mx-auto mt-20 mb-20" id="contact">
-            <h3 className="text-3xl ">{"Contact"}</h3>
+            <h3 className="text-3xl ">{t("title")}</h3>
             <div className="grid lg:grid-cols-2 gap-6 mt-6">
                 <Card className="w-full h-full bg-background p-6">
                     <div className="flex flex-col gap-3">
-                        <h4 className="text-2xl font-medium">{"Nous contacter"}</h4>
+                        <h4 className="text-2xl font-medium">{t("contactUs")}</h4>
                         <Form {...form}>
                             <form onSubmit={form.handleSubmit(handleSubmit)} className="grid w-full items-center gap-4">
                                 <FormField
@@ -91,9 +94,9 @@ export function Contact() {
                                     name="email"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel>E-mail</FormLabel>
+                                            <FormLabel>{t("form.labels.email")}</FormLabel>
                                             <FormControl>
-                                                <Input type="email" placeholder="x@domaine.com" {...field} />
+                                                <Input type="email" placeholder={t("form.placeholders.email")} {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -104,9 +107,9 @@ export function Contact() {
                                     name="object"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel>Objet</FormLabel>
+                                            <FormLabel>{t("form.labels.object")}</FormLabel>
                                             <FormControl>
-                                                <Input type="text" placeholder="Question à propos de ..." {...field} />
+                                                <Input type="text" placeholder={t("form.placeholders.email")} {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -117,10 +120,10 @@ export function Contact() {
                                     name="content"
                                     render={({ field }) => (
                                         <FormItem>
-                                            <FormLabel>Contenu</FormLabel>
+                                            <FormLabel>{t("form.labels.content")}</FormLabel>
                                             <FormControl>
                                                 <Textarea
-                                                    placeholder="Ecrivez votre message ici."
+                                                    placeholder={t("form.placeholders.content")}
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -142,9 +145,9 @@ export function Contact() {
                                 {submit ? 
                                     <Button disabled>
                                         <Loader2 className="animate-spin" />
-                                        Envoi en cours
+                                        {t("form.submitLoading")}
                                     </Button> : 
-                                    <Button type="submit">Envoyer</Button>}
+                                    <Button type="submit">{t("form.submit")}</Button>}
                             </form>
                         </Form>
                     </div>
@@ -152,20 +155,25 @@ export function Contact() {
                 <div className="flex flex-col gap-6">
                     <Card className="w-full bg-background p-6">
                         <div className="flex flex-col gap-3">
-                            <h4 className="text-2xl font-medium">Quoi nous dire ?</h4>
+                            <h4 className="text-2xl font-medium">{t("whatToSay")}</h4>
                             <div className="flex flex-col gap-1">
-                                <p className="text-md">Vous avez une question, une suggestion ou un retour d'expérience ?</p>
-                                <p className="text-md">N'hésitez pas à nous contacter, nous sommes là pour vous aider !</p>
+                                {
+                                    (t.raw('whatToSayContent') as string[]).map((line, index) => (
+                                        <p key={index}>{line}</p>
+                                    ))
+                                }
                             </div>
                         </div>
                     </Card>
                     <Card className="w-full bg-background p-6">
                         <div className="flex flex-col gap-3">
-                            <h4 className="text-2xl font-medium">Délais de réponse</h4>
+                            <h4 className="text-2xl font-medium">{t("responseTime")}</h4>
                             <div className="flex flex-col gap-1">
-                                <p className="text-md">Nous nous efforcons à vous répondre dans les plus bref délais.</p>
-                                <p className="text-md">Cependant, notez qu'il se peut que nous mettions du temps à vous répondre.</p>
-                                <p className="text-md">Merci de votre patience !</p>
+                                {
+                                    (t.raw('responseTimeContent') as string[]).map((line, index) => (
+                                        <p key={index}>{line}</p>
+                                    ))
+                                }
                             </div>
                         </div>
                     </Card>

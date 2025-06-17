@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/common/Header";
-import { Footer } from "@/components/common/Footer";
+import "../globals.css";
 import 'react-toastify/dist/ReactToastify.css';
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from 'next-intl';
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import Header from "@/components/common/Header";
 import ToastContainer from "@/components/common/ToastContainer";
+import { Footer } from "@/components/common/Footer";
+import { Locale } from "@/i18n/locales";
 
 
 const geistSans = Geist({
@@ -67,26 +72,39 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default async function LocalLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+
+  const { locale } = await params;
+  const messages = await getMessages();
+
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
-          <Header />
-        </header>
-        <main className="w-full h-full">
-          <ToastContainer />
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <NextIntlClientProvider messages={messages}>
+          <header>
+            <Header />
+          </header>
+          <main className="w-full h-full">
+            <ToastContainer />
+            {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
