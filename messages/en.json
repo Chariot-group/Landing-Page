@@ -1,127 +1,124 @@
 {
-    "LocaleSwitcher": {
-        "locale": "{locale, select, fr {🇫🇷 French} en {🇬🇧 English} es {🇪🇸 Spanish} other {🏴‍☠️ Unknown}}",
-        "flag": "{locale, select, fr {🇫🇷} en {🇬🇧} es {🇪🇸} other {🏴‍☠️}}"
-    },
-    "header": {
-        "subtitle": "Your role-play management tool",
-        "buttons": {
-            "about": "About",
-            "pricing": "Our offers",
-            "team": "The team",
-            "thanks": "Thanks",
-            "contact": "Contact"
-        }
-    },
-    "hero": {
-        "title": "Let your creativity flow, take charge of your campaigns and have fun!",
-        "cta": "Discover our offers"
-    },
-    "about": {
-        "title": "About",
-        "description": "Tired of juggling different tools to organize your campaigns?",
-        "content": [
-            "Discover CHARIOT, your new one-stop management tool. Experience your campaigns more intensely, thanks to the centralization of the functionalities you need to run them smoothly.",
-            "Thanks to its intuitive interface, CHARIOT lets you manage both player and non-player characters, access their stats, organize groups and battles with a simple move, optimize battles with the initiave tracker, and simply save character HP during and after a battle."
-        ]
-    },
-    "pricing": {
-        "title": "Our offers",
-        "plans": {
-            "annual": "Annual plan",
-            "monthly": "Monthly plan"
-        },
-        "button": {
-            "comingSoon": "Coming soon",
-            "subscribe": "Subscribe to {name} offer"
-        },
-        "byYear": "year",
-        "byMonth": "month"
-    },
-    "team": {
-        "title": "The team",
-        "developer": "Developer",
-        "description": [
-            "CHARIOT is first and foremost two friends brought together by a shared passion for role-playing games. Together, we experienced the difficulties of organizing campaigns, using a variety of tools, from websites to paper and pencil. And then, one day, we made up our minds: we were going to create our own tool to facilitate the organization of our campaigns. And so CHARIOT was born, a unique management tool created by gamers, for gamers.",
-            "We hope CHARIOT will help you and please you as much as we do.",
-            "Time for adventure!"
-        ],
-        "joinUs": "Join the CHARIOT adventure"
-    },
-    "thanks": {
-        "title": "Thanks",
-        "content": [
-            "None of this would have been possible without the talent, energy and generosity of all those who have contributed, in one way or another, to making this project a reality.",
-            "We'd like to express our deepest gratitude to everyone who supported, advised, challenged or inspired us. Every gesture, every idea, every word of encouragement counted.",
-            "We'd like to express our sincere thanks to all those involved."
-        ],
-        "jobs": {
-            "developer": "Developer",
-            "designer": "UI/UX Designer",
-            "marketer": "Marketing",
-            "illustrator": "Illustrator"
-        },
-        "descriptions": {
-            "JL": "We were supported by Jovis Lélue, who contributed to the initial design phases and provided invaluable assistance with DevOps and configuration management.",
-            "EC": "We benefited from Emma Caroff's expertise in graphic design and mock-up creation during the first iterations of the project.",
-            "MV": "Morgane Vigier helped us create our first advertising posters.",
-            "LL": "Léane Loubère was a great help in creating the illustrations needed for certain parts of the application."
-        }
-    },
-    "contact": {
-        "title": "Contact",
-        "errors": {
-            "emailRequired": "You must enter an e-mail address.",
-            "emailInvalid": "You must enter a valid e-mail address.",
-            "objectRequired": "You must enter a subject. (5 characters minimum)",
-            "contentRequired": "Your e-mail must contain a message. (25 characters minimum)",
-            "reCaptchaRequired": "You must validate the reCAPTCHA",
-            "reCaptchaInvalid": "reCAPTCHA verification failed.",
-            "serverError": "Unable to send message. Please try again later."
-        },
-        "success": "Your message has been sent. We will reply as soon as possible.",
-        "contactUs": "Contact us",
-        "form": {
-            "labels": {
-                "email": "E-mail",
-                "object": "Object",
-                "content": "Content"
-            },
-            "placeholders": {
-                "email": "Yout e-mail",
-                "object": "Subject of your message",
-                "content": "Your message"
-            },
-            "submit": "Send",
-            "submitLoading": "Sending..."
-        },
-        "whatToSay": "What to tell us?",
-        "whatToSayContent": [
-            "Do you have a question, suggestion or feedback?",
-            "Don't hesitate to contact us - we're here to help!"
-        ],
-        "responseTime": "Response times",
-        "responseTimeContent": [
-            "We'll do our best to get back to you as soon as possible.",
-            "Please note, however, that it may take us some time to get back to you.",
-            "Thank you for your patience!"
-        ]
-    },
-    "success": {
-        "title": "Everything went well, welcome to Chariot!",
-        "content": [
-            "You will receive an email at ",
-            " to activate your account."
-        ],
-        "thanks": "Enjoy CHARIOT!"
-    },
-    "footer": {
-        "CGV": "GTC",
-        "CGU": "GTCU"
-    },
-    "NotFound": {
-        "title": "Critical failure, page not found",
-        "description": "Location roll: 1. The owlbear stares at the sign... but the sign doesn't respond.",
-        "backToHome": "Back to home page"
+  "LocaleSwitcher": {
+    "locale": "{locale, select, fr {🇫🇷 French} en {🇬🇧 English} es {🇪🇸 Spanish} other {🏴‍☠️ Unknown}}",
+    "flag": "{locale, select, fr {🇫🇷} en {🇬🇧} es {🇪🇸} other {🏴‍☠️}}"
+  },
+  "header": {
+    "subtitle": "Your role-play management tool",
+    "buttons": {
+      "about": "About",
+      "pricing": "Our offers",
+      "team": "The team",
+      "thanks": "Thanks",
+      "contact": "Contact"
     }
+  },
+  "hero": {
+    "title": "Let your creativity flow, take charge of your campaigns and have fun!",
+    "cta": "Discover our offers"
+  },
+  "about": {
+    "title": "About",
+    "description": "Tired of juggling different tools to organize your campaigns?",
+    "content": [
+      "Discover CHARIOT, your new one-stop management tool. Experience your campaigns more intensely, thanks to the centralization of the functionalities you need to run them smoothly.",
+      "Thanks to its intuitive interface, CHARIOT lets you manage both player and non-player characters, access their stats, organize groups and battles with a simple move, optimize battles with the initiave tracker, and simply save character HP during and after a battle."
+    ]
+  },
+  "pricing": {
+    "title": "Our offers",
+    "plans": {
+      "annual": "Annual plan",
+      "monthly": "Monthly plan"
+    },
+    "button": {
+      "comingSoon": "Coming soon",
+      "subscribe": "Subscribe to {name} offer"
+    },
+    "byYear": "year",
+    "byMonth": "month"
+  },
+  "team": {
+    "title": "The team",
+    "developer": "Developer",
+    "description": [
+      "CHARIOT is first and foremost two friends brought together by a shared passion for role-playing games. Together, we experienced the difficulties of organizing campaigns, using a variety of tools, from websites to paper and pencil. And then, one day, we made up our minds: we were going to create our own tool to facilitate the organization of our campaigns. And so CHARIOT was born, a unique management tool created by gamers, for gamers.",
+      "We hope CHARIOT will help you and please you as much as we do.",
+      "Time for adventure!"
+    ],
+    "joinUs": "Join the CHARIOT adventure"
+  },
+  "thanks": {
+    "title": "Thanks",
+    "content": [
+      "None of this would have been possible without the talent, energy and generosity of all those who have contributed, in one way or another, to making this project a reality.",
+      "We'd like to express our deepest gratitude to everyone who supported, advised, challenged or inspired us. Every gesture, every idea, every word of encouragement counted.",
+      "We'd like to express our sincere thanks to all those involved."
+    ],
+    "jobs": {
+      "developer": "Developer",
+      "designer": "UI/UX Designer",
+      "marketer": "Marketing",
+      "illustrator": "Illustrator"
+    },
+    "descriptions": {
+      "JL": "We were supported by Jovis Lélue, who contributed to the initial design phases and provided invaluable assistance with DevOps and configuration management.",
+      "EC": "We benefited from Emma Caroff's expertise in graphic design and mock-up creation during the first iterations of the project.",
+      "MV": "Morgane Vigier helped us create our first advertising posters.",
+      "LL": "Léane Loubère was a great help in creating the illustrations needed for certain parts of the application."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "errors": {
+      "emailRequired": "You must enter an e-mail address.",
+      "emailInvalid": "You must enter a valid e-mail address.",
+      "objectRequired": "You must enter a subject. (5 characters minimum)",
+      "contentRequired": "Your e-mail must contain a message. (25 characters minimum)",
+      "reCaptchaRequired": "You must validate the reCAPTCHA",
+      "reCaptchaInvalid": "reCAPTCHA verification failed.",
+      "serverError": "Unable to send message. Please try again later."
+    },
+    "success": "Your message has been sent. We will reply as soon as possible.",
+    "contactUs": "Contact us",
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "object": "Object",
+        "content": "Content"
+      },
+      "placeholders": {
+        "email": "Yout e-mail",
+        "object": "Subject of your message",
+        "content": "Your message"
+      },
+      "submit": "Send",
+      "submitLoading": "Sending..."
+    },
+    "whatToSay": "What to tell us?",
+    "whatToSayContent": [
+      "Do you have a question, suggestion or feedback?",
+      "Don't hesitate to contact us - we're here to help!"
+    ],
+    "responseTime": "Response times",
+    "responseTimeContent": [
+      "We'll do our best to get back to you as soon as possible.",
+      "Please note, however, that it may take us some time to get back to you.",
+      "Thank you for your patience!"
+    ]
+  },
+  "success": {
+    "title": "Everything went well, welcome to Chariot!",
+    "content": ["You will receive an email at ", " to activate your account."],
+    "thanks": "Enjoy CHARIOT!"
+  },
+  "footer": {
+    "CGV": "GTC",
+    "CGU": "GTCU"
+  },
+  "NotFound": {
+    "title": "Critical failure, page not found",
+    "description": "Location roll: 1. The owlbear stares at the sign... but the sign doesn't respond.",
+    "backToHome": "Back to home page"
+  }
 }

@@ -1,127 +1,124 @@
 {
-    "LocaleSwitcher": {
-        "locale": "{locale, select, fr {🇫🇷 Français} en {🇬🇧 Anglais} es {🇪🇸 Espagnol} other {🏴‍☠️ Inconnue}}",
-        "flag": "{locale, select, fr {🇫🇷} en {🇬🇧} es {🇪🇸} other {🏴‍☠️}}"
-    },
-    "header": {
-        "subtitle": "Votre outil de gestion de jeu de rôle",
-        "buttons": {
-            "about": "À propos",
-            "pricing": "Nos offres",
-            "team": "L'équipe",
-            "thanks": "Remerciements",
-            "contact": "Contact"
-        }
-    },
-    "hero": {
-        "title": "Laissez s'épanouir votre créativité, prenez en main vos campagnes et amusez-vous !",
-        "cta": "Découvrez nos offres"
-    },
-    "about": {
-        "title": "À Propos",
-        "description": "Vous en avez marre de jongler entre différents outils pour organiser vos campagnes ?",
-        "content": [
-            "Découvrez CHARIOT, votre nouvel outil de gestion unique pour maître du jeu. Vivez vos campagnes plus intensément grâce à la centralisation des fonctionnalités nécessaires au bon déroulement de celles-ci.",
-            "Grâce à son interface intuitive, CHARIOT vous permet de gérer les personnages, joueurs ou non, d'accéder à leurs statistiques, d'organiser les groupes et les combats d'un simple mouvement, d'optimiser les combats avec l'initiave tracker, et de sauvegarder simplement les PV des personnages pendant et après un combat."
-        ]
-    },
-    "pricing": {
-        "title": "Nos offres",
-        "plans": {
-            "annual": "Plan annuel",
-            "monthly": "Plan mensuel"
-        },
-        "button": {
-            "comingSoon": "Bientôt disponible",
-            "subscribe": "Souscrire à l'offre {name}"
-        },
-        "byYear": "an",
-        "byMonth": "mois"
-    },
-    "team": {
-        "title": "L'équipe",
-        "developer": "Développeur",
-        "description": [
-            "CHARIOT, c'est d'abord deux amis réunis par une passion commune pour les jeux de rôles. Ensembles, nous faisons l'expérience de la difficulté d'organiser des campagnes, en utilisant plusieurs outils, des sites web comme du papier et un crayon. Et puis, un jour, nous nous décidons : nous allons créer notre propre outil pour faciliter l'organisation de nos campagnes. C'est ainsi que né CHARIOT, un outil de gestion unique, créé par des joueurs, pour des joueurs.",
-            "Nous espérons que CHARIOT vous aidera et vous plaira autant qu'à nous.",
-            "Place à l'aventure !"
-        ],
-        "joinUs": "Rejoindre l'aventure CHARIOT"
-    },
-    "thanks": {
-        "title": "Remerciements",
-        "content": [
-            "Rien de tout cela n’aurait été possible sans le talent, l’énergie et la générosité de celles et ceux qui ont contribué, de près ou de loin, à faire grandir ce projet.",
-            "Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui nous ont soutenus, conseillés, challengés ou inspirés. Chaque geste, chaque idée, chaque mot d'encouragement a compté.",
-            "Voici celles et ceux que nous tenons à remercier, sincèrement."
-        ],
-        "jobs": {
-            "developer": "Développeur",
-            "designer": "Concepteur UI/UX",
-            "marketer": "Commercial",
-            "illustrator": "Illustrateur"
-        },
-        "descriptions": {
-            "JL": "Nous avons été accompagnés par Jovis Lélue, qui a contribué aux premières phases de conception et apporté une aide précieuse sur la partie DevOps et la gestion de configurations.",
-            "EC": "Nous avons bénéficié de l’expertise d’Emma Caroff pour le graphisme et la création de maquettes lors des premières itérations du projet.",
-            "MV": "Dans le cadre de la création de premières affiches de publicité, nous avons reçu l’aide de Morgane Vigier pour la création de celles-ci.",
-            "LL": "Afin de créer des illustrations nécessaires à certaines parties de l’application, Léane Loubère nous a apporté une aide significative."
-        }
-    },
-    "contact": {
-        "title": "Contact",
-        "errors": {
-            "emailRequired": "Vous devez renseigner un e-mail.",
-            "emailInvalid": "Vous devez renseigner un e-mail valide.",
-            "objectRequired": "Vous devez renseigner un objet. (5 caractères minimum)",
-            "contentRequired": "Votre e-mail doit contenir un message. (25 caractères minimum)",
-            "reCaptchaRequired": "Vous devez valider le reCAPTCHA.",
-            "reCaptchaInvalid": "Échec de la vérification reCAPTCHA.",
-            "serverError": "Impossible d'envoyer le message. Réessayez plus tard."
-        },
-        "success": "Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
-        "contactUs": "Nous contacter",
-        "form": {
-            "labels": {
-                "email": "E-mail",
-                "object": "Objet",
-                "content": "Contenu"
-            },
-            "placeholders": {
-                "email": "Votre e-mail",
-                "object": "Objet de votre message",
-                "content": "Votre message"
-            },
-            "submit": "Envoyer",
-            "submitLoading": "Envoi en cours..."
-        },
-        "whatToSay": "Quoi nous dire ?",
-        "whatToSayContent": [
-            "Vous avez une question, une suggestion ou un retour d'expérience ?",
-            "N'hésitez pas à nous contacter, nous sommes là pour vous aider !"
-        ],
-        "responseTime": "Délais de réponse",
-        "responseTimeContent": [
-            "Nous nous efforçons de vous répondre dans les plus brefs délais.",
-            "Cependant, notez qu'il se peut que nous mettions du temps à vous répondre.",
-            "Merci de votre patience !"
-        ]
-    },
-    "success": {
-        "title": "Tout s'est bien passé, bienvenu sur Chariot !",
-        "content": [
-            "Tu vas recevoir un email à ",
-            " pour activer ton compte."
-        ],
-        "thanks": "Régale toi avec CHARIOT !"
-    },
-    "footer": {
-        "CGV": "CGV",
-        "CGU": "CGU"
-    },
-    "NotFound": {
-        "title": "Échec critique, page introuvable",
-        "description": "Jet de localisation : 1. Le hibours fixe le panneau… mais le panneau ne répond pas.",
-        "backToHome": "Retour à l'accueil"
+  "LocaleSwitcher": {
+    "locale": "{locale, select, fr {🇫🇷 Français} en {🇬🇧 Anglais} es {🇪🇸 Espagnol} other {🏴‍☠️ Inconnue}}",
+    "flag": "{locale, select, fr {🇫🇷} en {🇬🇧} es {🇪🇸} other {🏴‍☠️}}"
+  },
+  "header": {
+    "subtitle": "Votre outil de gestion de jeu de rôle",
+    "buttons": {
+      "about": "À propos",
+      "pricing": "Nos offres",
+      "team": "L'équipe",
+      "thanks": "Remerciements",
+      "contact": "Contact"
     }
+  },
+  "hero": {
+    "title": "Laissez s'épanouir votre créativité, prenez en main vos campagnes et amusez-vous !",
+    "cta": "Découvrez nos offres"
+  },
+  "about": {
+    "title": "À Propos",
+    "description": "Vous en avez marre de jongler entre différents outils pour organiser vos campagnes ?",
+    "content": [
+      "Découvrez CHARIOT, votre nouvel outil de gestion unique pour maître du jeu. Vivez vos campagnes plus intensément grâce à la centralisation des fonctionnalités nécessaires au bon déroulement de celles-ci.",
+      "Grâce à son interface intuitive, CHARIOT vous permet de gérer les personnages, joueurs ou non, d'accéder à leurs statistiques, d'organiser les groupes et les combats d'un simple mouvement, d'optimiser les combats avec l'initiave tracker, et de sauvegarder simplement les PV des personnages pendant et après un combat."
+    ]
+  },
+  "pricing": {
+    "title": "Nos offres",
+    "plans": {
+      "annual": "Plan annuel",
+      "monthly": "Plan mensuel"
+    },
+    "button": {
+      "comingSoon": "Bientôt disponible",
+      "subscribe": "Souscrire à l'offre {name}"
+    },
+    "byYear": "an",
+    "byMonth": "mois"
+  },
+  "team": {
+    "title": "L'équipe",
+    "developer": "Développeur",
+    "description": [
+      "CHARIOT, c'est d'abord deux amis réunis par une passion commune pour les jeux de rôles. Ensembles, nous faisons l'expérience de la difficulté d'organiser des campagnes, en utilisant plusieurs outils, des sites web comme du papier et un crayon. Et puis, un jour, nous nous décidons : nous allons créer notre propre outil pour faciliter l'organisation de nos campagnes. C'est ainsi que né CHARIOT, un outil de gestion unique, créé par des joueurs, pour des joueurs.",
+      "Nous espérons que CHARIOT vous aidera et vous plaira autant qu'à nous.",
+      "Place à l'aventure !"
+    ],
+    "joinUs": "Rejoindre l'aventure CHARIOT"
+  },
+  "thanks": {
+    "title": "Remerciements",
+    "content": [
+      "Rien de tout cela n’aurait été possible sans le talent, l’énergie et la générosité de celles et ceux qui ont contribué, de près ou de loin, à faire grandir ce projet.",
+      "Nous tenons à exprimer notre profonde gratitude à toutes les personnes qui nous ont soutenus, conseillés, challengés ou inspirés. Chaque geste, chaque idée, chaque mot d'encouragement a compté.",
+      "Voici celles et ceux que nous tenons à remercier, sincèrement."
+    ],
+    "jobs": {
+      "developer": "Développeur",
+      "designer": "Concepteur UI/UX",
+      "marketer": "Commercial",
+      "illustrator": "Illustrateur"
+    },
+    "descriptions": {
+      "JL": "Nous avons été accompagnés par Jovis Lélue, qui a contribué aux premières phases de conception et apporté une aide précieuse sur la partie DevOps et la gestion de configurations.",
+      "EC": "Nous avons bénéficié de l’expertise d’Emma Caroff pour le graphisme et la création de maquettes lors des premières itérations du projet.",
+      "MV": "Dans le cadre de la création de premières affiches de publicité, nous avons reçu l’aide de Morgane Vigier pour la création de celles-ci.",
+      "LL": "Afin de créer des illustrations nécessaires à certaines parties de l’application, Léane Loubère nous a apporté une aide significative."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "errors": {
+      "emailRequired": "Vous devez renseigner un e-mail.",
+      "emailInvalid": "Vous devez renseigner un e-mail valide.",
+      "objectRequired": "Vous devez renseigner un objet. (5 caractères minimum)",
+      "contentRequired": "Votre e-mail doit contenir un message. (25 caractères minimum)",
+      "reCaptchaRequired": "Vous devez valider le reCAPTCHA.",
+      "reCaptchaInvalid": "Échec de la vérification reCAPTCHA.",
+      "serverError": "Impossible d'envoyer le message. Réessayez plus tard."
+    },
+    "success": "Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.",
+    "contactUs": "Nous contacter",
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "object": "Objet",
+        "content": "Contenu"
+      },
+      "placeholders": {
+        "email": "Votre e-mail",
+        "object": "Objet de votre message",
+        "content": "Votre message"
+      },
+      "submit": "Envoyer",
+      "submitLoading": "Envoi en cours..."
+    },
+    "whatToSay": "Quoi nous dire ?",
+    "whatToSayContent": [
+      "Vous avez une question, une suggestion ou un retour d'expérience ?",
+      "N'hésitez pas à nous contacter, nous sommes là pour vous aider !"
+    ],
+    "responseTime": "Délais de réponse",
+    "responseTimeContent": [
+      "Nous nous efforçons de vous répondre dans les plus brefs délais.",
+      "Cependant, notez qu'il se peut que nous mettions du temps à vous répondre.",
+      "Merci de votre patience !"
+    ]
+  },
+  "success": {
+    "title": "Tout s'est bien passé, bienvenu sur Chariot !",
+    "content": ["Tu vas recevoir un email à ", " pour activer ton compte."],
+    "thanks": "Régale toi avec CHARIOT !"
+  },
+  "footer": {
+    "CGV": "CGV",
+    "CGU": "CGU"
+  },
+  "NotFound": {
+    "title": "Échec critique, page introuvable",
+    "description": "Jet de localisation : 1. Le hibours fixe le panneau… mais le panneau ne répond pas.",
+    "backToHome": "Retour à l'accueil"
+  }
 }

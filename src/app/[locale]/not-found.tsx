@@ -12,9 +12,7 @@ export default function NotFound() {
         <div className="p-6 w-full flex flex-col items-center justify-center gap-[3dvh]">
           <div className="flex flex-col items-center justify-center gap-2">
             <h1 className="text-xl font-bold">{t("title")}</h1>
-            <p className="text-muted-foreground text-center">
-              {t("description")}
-            </p>
+            <p className="text-muted-foreground text-center">{t("description")}</p>
           </div>
           <img
             src={"/illustrations/404/404_Owlbear_wb.webp"}
