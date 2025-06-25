@@ -59,14 +59,17 @@
       "developer": "Developer",
       "designer": "UI/UX Designer",
       "marketer": "Marketing",
-      "illustrator": "Illustrator"
+      "illustrator": "Illustrator",
+      "graphicDesigner": "Graphic Designer & UI/UX Designer"
     },
     "descriptions": {
       "JL": "We were supported by Jovis Lélue, who contributed to the initial design phases and provided invaluable assistance with DevOps and configuration management.",
       "EC": "We benefited from Emma Caroff's expertise in graphic design and mock-up creation during the first iterations of the project.",
       "MV": "Morgane Vigier helped us create our first advertising posters.",
       "LL": "Léane Loubère was a great help in creating the illustrations needed for certain parts of the application.",
-      "AB": "Amina provided invaluable help in organizing the communications and marketing campaign."
+      "AB": "Amina provided invaluable help in organizing the communications and marketing campaign.",
+      "RL": "To assist Amina in marketing-related tasks, Rémi has made a major contribution to the project.",
+      "GB": "Gabriel's arrival enabled the project to take a professional turn, from a graphic and UI/UX design point of view."
     }
   },
   "contact": {
