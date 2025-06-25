@@ -22,4 +22,6 @@ services:
       - RECEIVER_EMAIL=${RECEIVER_EMAIL}
       - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL}
       - NEXT_PUBLIC_STATE=${NEXT_PUBLIC_STATE}
+      - PORT=${PORT}
+      - NODE_ENV=${NODE_ENV}
     command: ["npm", "run", "dev"]
