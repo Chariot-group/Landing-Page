@@ -35,8 +35,8 @@ export default function LanguageSwitcher({ className }: LocaleSwitcherProps) {
           <SelectItem
             key={current}
             value={current}>
-              <span className="xl:hidden">{t("flag", { locale: current })}</span>
-              <span className="hidden xl:inline">{t("locale", { locale: current })}</span>
+            <span className="xl:hidden">{t("flag", { locale: current })}</span>
+            <span className="hidden xl:inline">{t("locale", { locale: current })}</span>
           </SelectItem>
         ))}
       </SelectContent>

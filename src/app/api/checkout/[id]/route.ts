@@ -1,13 +1,9 @@
-import { NextRequest } from 'next/server';
-import Stripe from 'stripe';
+import { NextRequest } from "next/server";
+import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "");
 
-export async function GET(
-  req: NextRequest,
-  context: { params: { id: string } }
-) {
-
+export async function GET(req: NextRequest, context: { params: { id: string } }) {
   const { params } = context;
   const resolvedParams = await params;
 

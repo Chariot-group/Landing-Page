@@ -1,9 +1,9 @@
-'use client'
-import { Locale } from '@/i18n/locales'
-import Script from 'next/script'
+"use client";
+import { Locale } from "@/i18n/locales";
+import Script from "next/script";
 
 interface RecaptchaScriptProps {
-  lang: Locale
+  lang: Locale;
 }
 
 export default function RecaptchaScript({ lang }: RecaptchaScriptProps) {
@@ -12,5 +12,5 @@ export default function RecaptchaScript({ lang }: RecaptchaScriptProps) {
       src={`https://www.google.com/recaptcha/api.js?hl=${lang}`}
       strategy="beforeInteractive"
     />
-  )
+  );
 }

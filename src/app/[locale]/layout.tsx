@@ -1,7 +1,7 @@
 import "../globals.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/common/Header";
@@ -10,7 +10,6 @@ import { Footer } from "@/components/common/Footer";
 import { Locale } from "@/i18n/locales";
 import RecaptchaScript from "@/components/modules/RecaptchaScript";
 
-
 export default async function LocalLayout({
   children,
   params,
@@ -18,7 +17,6 @@ export default async function LocalLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-
   const { locale } = await params;
   const messages = await getMessages();
 
