@@ -6,7 +6,7 @@ services:
     container_name: showcase-chariot-prod
     working_dir: /app
     ports:
-      - "3000:3000"
+      - "1000:1000"
     environment:
       - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
       - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
