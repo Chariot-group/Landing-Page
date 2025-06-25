@@ -282,6 +282,131 @@
         ]
       }
     ]
+  },
+  "TOS": {
+    "sections": [
+      {
+        "title": "Artículo 1 – Objeto",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Estas Condiciones Generales de Venta regulan la venta de servicios de pago de la aplicación Chariot por parte de CHARIOT."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 2 – Ofertas y precios",
+        "content": [
+          {
+            "type": "list",
+            "text": "Las ofertas de pago se describen en el sitio web."
+          },
+          {
+            "type": "list",
+            "text": "Los precios se indican en euros con IVA incluido."
+          },
+          {
+            "type": "list",
+            "text": "Los precios pueden cambiar, los usuarios serán informados antes de la facturación."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 3 – Pedido",
+        "content": [
+          {
+            "type": "list",
+            "text": "El pedido se realiza a través del formulario en línea."
+          },
+          {
+            "type": "list",
+            "text": "La validación del pedido implica la aceptación de las Condiciones Generales de Venta."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 4 – Pago",
+        "content": [
+          {
+            "type": "list",
+            "text": "El pago se realiza en línea a través de Stripe."
+          },
+          {
+            "type": "list",
+            "text": "Los métodos de pago aceptados son las principales tarjetas bancarias."
+          },
+          {
+            "type": "list",
+            "text": "Los pagos están asegurados."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 5 – Duración y renovación",
+        "content": [
+          {
+            "type": "list",
+            "text": "Las suscripciones se renuevan automáticamente salvo cancelación."
+          },
+          {
+            "type": "list",
+            "text": "El usuario puede cancelar en cualquier momento; la cancelación será efectiva al final del período en curso."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 6 – Derecho de desistimiento",
+        "content": [
+          {
+            "type": "list",
+            "text": "De acuerdo con la ley, el derecho de desistimiento no se aplica a los servicios completamente ejecutados tras la compra (contenido digital)."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 7 – Cancelación y suspensión",
+        "content": [
+          {
+            "type": "list",
+            "text": "CHARIOT puede suspender el acceso en caso de impago o incumplimiento de las Condiciones de Uso."
+          },
+          {
+            "type": "list",
+            "text": "En caso de cancelación, los datos pueden eliminarse después de un período de tiempo."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 8 – Garantía y responsabilidad",
+        "content": [
+          {
+            "type": "list",
+            "text": "Los servicios se proporcionan “tal cual.”"
+          },
+          {
+            "type": "list",
+            "text": "La responsabilidad de CHARIOT está limitada conforme a la ley."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 9 – Datos personales",
+        "content": [
+          {
+            "type": "list",
+            "text": "Consultar la Política de Privacidad."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 10 – Ley aplicable y jurisdicción",
+        "content": [
+          {
+            "type": "list",
+            "text": "Derecho francés, tribunales del domicilio social de CHARIOT."
+          }
+        ]
+      }
+    ]
   }
-
 }

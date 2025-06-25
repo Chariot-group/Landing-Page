@@ -282,5 +282,131 @@
         ]
       }
     ]
+  },
+  "TOS": {
+    "sections": [
+      {
+        "title": "Article 1 – Purpose",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "These General Terms and Conditions of Sale govern the sale of paid services of the Chariot application by CHARIOT."
+          }
+        ]
+      },
+      {
+        "title": "Article 2 – Offers and Pricing",
+        "content": [
+          {
+            "type": "list",
+            "text": "Paid offers are described on the website."
+          },
+          {
+            "type": "list",
+            "text": "Prices are indicated in euros including VAT."
+          },
+          {
+            "type": "list",
+            "text": "Prices may change, and users will be informed before being charged."
+          }
+        ]
+      },
+      {
+        "title": "Article 3 – Order",
+        "content": [
+          {
+            "type": "list",
+            "text": "Orders are placed via the online form."
+          },
+          {
+            "type": "list",
+            "text": "Order validation constitutes acceptance of the Terms and Conditions of Sale."
+          }
+        ]
+      },
+      {
+        "title": "Article 4 – Payment",
+        "content": [
+          {
+            "type": "list",
+            "text": "Payment is made online via Stripe."
+          },
+          {
+            "type": "list",
+            "text": "Accepted payment methods are major credit cards."
+          },
+          {
+            "type": "list",
+            "text": "Payments are secured."
+          }
+        ]
+      },
+      {
+        "title": "Article 5 – Duration and Renewal",
+        "content": [
+          {
+            "type": "list",
+            "text": "Subscriptions are automatically renewed unless canceled."
+          },
+          {
+            "type": "list",
+            "text": "The user may cancel at any time; cancellation takes effect at the end of the current period."
+          }
+        ]
+      },
+      {
+        "title": "Article 6 – Right of Withdrawal",
+        "content": [
+          {
+            "type": "list",
+            "text": "In accordance with the law, the right of withdrawal does not apply to fully delivered services upon purchase (digital content)."
+          }
+        ]
+      },
+      {
+        "title": "Article 7 – Termination and Suspension",
+        "content": [
+          {
+            "type": "list",
+            "text": "CHARIOT may suspend access in case of non-payment or violation of the Terms of Use."
+          },
+          {
+            "type": "list",
+            "text": "In case of termination, data may be deleted after a period."
+          }
+        ]
+      },
+      {
+        "title": "Article 8 – Warranty and Liability",
+        "content": [
+          {
+            "type": "list",
+            "text": "Services are provided “as is.”"
+          },
+          {
+            "type": "list",
+            "text": "CHARIOT’s liability is limited in accordance with the law."
+          }
+        ]
+      },
+      {
+        "title": "Article 9 – Personal Data",
+        "content": [
+          {
+            "type": "list",
+            "text": "See the Privacy Policy."
+          }
+        ]
+      },
+      {
+        "title": "Article 10 – Governing Law and Jurisdiction",
+        "content": [
+          {
+            "type": "list",
+            "text": "French law, courts of CHARIOT’s registered office."
+          }
+        ]
+      }
+    ]
   }
 }

@@ -282,5 +282,131 @@
         ]
       }
     ]
+  },
+  "TOS": {
+    "sections": [
+      {
+        "title": "Article 1 – Objet",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Les présentes Conditions Générales de Vente régissent la vente des services payants de l’application Chariot par CHARIOT."
+          }
+        ]
+      },
+      {
+        "title": "Article 2 – Offres et tarifs",
+        "content": [
+          {
+            "type": "list",
+            "text": "Les offres payantes sont décrites sur le site."
+          },
+          {
+            "type": "list",
+            "text": "Les prix sont indiqués en euros TTC."
+          },
+          {
+            "type": "list",
+            "text": "Les tarifs peuvent être modifiés, les utilisateurs en seront informés avant facturation."
+          }
+        ]
+      },
+      {
+        "title": "Article 3 – Commande",
+        "content": [
+          {
+            "type": "list",
+            "text": "La commande se fait via le formulaire en ligne."
+          },
+          {
+            "type": "list",
+            "text": "La validation de la commande vaut acceptation des CGV."
+          }
+        ]
+      },
+      {
+        "title": "Article 4 – Paiement",
+        "content": [
+          {
+            "type": "list",
+            "text": "Le paiement s’effectue en ligne via Stripe."
+          },
+          {
+            "type": "list",
+            "text": "Les moyens de paiement acceptés sont les cartes bancaires principales."
+          },
+          {
+            "type": "list",
+            "text": "Les paiements sont sécurisés."
+          }
+        ]
+      },
+      {
+        "title": "Article 5 – Durée et renouvellement",
+        "content": [
+          {
+            "type": "list",
+            "text": "Les abonnements sont renouvelés automatiquement sauf résiliation."
+          },
+          {
+            "type": "list",
+            "text": "L’utilisateur peut résilier à tout moment, la résiliation prendra effet à la fin de la période en cours."
+          }
+        ]
+      },
+      {
+        "title": "Article 6 – Droit de rétractation",
+        "content": [
+          {
+            "type": "list",
+            "text": "Conformément à la loi, le droit de rétractation ne s’applique pas aux services pleinement exécutés dès l’achat (contenus numériques)."
+          }
+        ]
+      },
+      {
+        "title": "Article 7 – Résiliation et suspension",
+        "content": [
+          {
+            "type": "list",
+            "text": "CHARIOT peut suspendre l’accès en cas de non-paiement ou de violation des CGU."
+          },
+          {
+            "type": "list",
+            "text": "En cas de résiliation, les données peuvent être supprimées après un délai."
+          }
+        ]
+      },
+      {
+        "title": "Article 8 – Garantie et responsabilité",
+        "content": [
+          {
+            "type": "list",
+            "text": "Les services sont fournis “en l’état”."
+          },
+          {
+            "type": "list",
+            "text": "La responsabilité de CHARIOT est limitée conformément à la loi."
+          }
+        ]
+      },
+      {
+        "title": "Article 9 – Données personnelles",
+        "content": [
+          {
+            "type": "list",
+            "text": "Voir la Politique de confidentialité."
+          }
+        ]
+      },
+      {
+        "title": "Article 10 – Loi applicable et juridiction",
+        "content": [
+          {
+            "type": "list",
+            "text": "Droit français, tribunaux du siège social."
+          }
+        ]
+      }
+    ]
   }
 }
