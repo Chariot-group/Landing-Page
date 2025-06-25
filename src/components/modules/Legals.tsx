@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import React from "react";
 
 type Section = {
   title: string;
@@ -28,9 +29,23 @@ export function Legals({ name }: LegalsProps) {
                 </ul>
               ) : (
                 <p key={contentIndex} className="mb-2">
-                  {content.text.split("{a}")[0]}
-                  {content.text.includes('{a}') && <a className="hover:underline underline-offset-2" href={process.env.NEXT_PUBLIC_APP_URL}>{process.env.NEXT_PUBLIC_APP_URL}</a>}
-                  {content.text.split("{a}")[1]}
+                  {content.text.includes('{a}') && (
+                    <React.Fragment>
+                      {content.text.split("{a}")[0]}
+                      <a className="hover:underline underline-offset-2" href={process.env.NEXT_PUBLIC_APP_URL}>{process.env.NEXT_PUBLIC_APP_URL}</a>
+                      {content.text.split("{a}")[1]}
+                    </React.Fragment>
+                  )}                  
+                  {content.text.includes('{e}') && (
+                    <React.Fragment>
+                      {content.text.split("{e}")[0]}
+                      <a className="hover:underline underline-offset-2" href={`mailto:${process.env.RECEIVER_EMAIL}`}>{process.env.RECEIVER_EMAIL}</a>
+                      {content.text.split("{e}")[1]}
+                    </React.Fragment>
+                  )}
+                  {!content.text.includes('{e}') && !content.text.includes('{a}') && (
+                    content.text
+                  )}
                 </p>
               )
             ))

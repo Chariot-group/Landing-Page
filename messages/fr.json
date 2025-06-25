@@ -408,5 +408,121 @@
         ]
       }
     ]
+  },
+  "legalNotice":{
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Chariot s’engage à protéger les données personnelles des utilisateurs."
+          }
+        ]
+      },
+      {
+        "title": "Données collectées",
+        "content": [
+          {
+            "type": "list",
+            "text": "Données d’identification,"
+          },
+          {
+            "type": "list",
+            "text": "Données de connexion,"
+          },
+          {
+            "type": "list",
+            "text": "Données relatives à l’usage du service."
+          }
+        ]
+      },
+      {
+        "title": "Finalités",
+        "content": [
+          {
+            "type": "list",
+            "text": "Gestion du compte,"
+          },
+          {
+            "type": "list",
+            "text": "Fourniture du service,"
+          },
+          {
+            "type": "list",
+            "text": "Marketing (avec consentement),"
+          },
+          {
+            "type": "list",
+            "text": "Amélioration du service."
+          }
+        ]
+      },
+      {
+        "title": "Durée de conservation",
+        "content": [
+          {
+            "type": "list",
+            "text": "Données conservées le temps nécessaire à la finalité,"
+          },
+          {
+            "type": "list",
+            "text": "Respect des obligations légales."
+          }
+        ]
+      },
+      {
+        "title": "Droits des utilisateurs",
+        "content": [
+          {
+            "type": "list",
+            "text": "Accès, rectification, suppression,"
+          },
+          {
+            "type": "list",
+            "text": "Opposition au traitement,"
+          },
+          {
+            "type": "list",
+            "text": "Portabilité,"
+          },
+          {
+            "type": "list",
+            "text": "Contact pour exercer ses droits."
+          }
+        ]
+      },
+      {
+        "title": "Sécurité",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Mesures techniques et organisationnelles pour protéger les données."
+          }
+        ]
+      },
+      {
+        "title": "Cookies",
+        "content": [
+          {
+            "type": "list",
+            "text": "Utilisation limitée,"
+          },
+          {
+            "type": "list",
+            "text": "Consentement requis."
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Email : {e} pour toute question RGPD."
+          }
+        ]
+      }
+    ]
   }
 }

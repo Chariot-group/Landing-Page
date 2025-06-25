@@ -408,5 +408,122 @@
         ]
       }
     ]
+  },
+  "legalNotice": {
+    "sections": [
+      {
+        "title": "Introducción",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Chariot se compromete a proteger los datos personales de los usuarios."
+          }
+        ]
+      },
+      {
+        "title": "Datos recogidos",
+        "content": [
+          {
+            "type": "list",
+            "text": "Datos de identificación,"
+          },
+          {
+            "type": "list",
+            "text": "Datos de conexión,"
+          },
+          {
+            "type": "list",
+            "text": "Datos sobre el uso del servicio."
+          }
+        ]
+      },
+      {
+        "title": "Finalidades",
+        "content": [
+          {
+            "type": "list",
+            "text": "Gestión de la cuenta,"
+          },
+          {
+            "type": "list",
+            "text": "Prestación del servicio,"
+          },
+          {
+            "type": "list",
+            "text": "Marketing (con consentimiento),"
+          },
+          {
+            "type": "list",
+            "text": "Mejora del servicio."
+          }
+        ]
+      },
+      {
+        "title": "Duración de conservación",
+        "content": [
+          {
+            "type": "list",
+            "text": "Datos conservados durante el tiempo necesario para su finalidad,"
+          },
+          {
+            "type": "list",
+            "text": "Cumplimiento de obligaciones legales."
+          }
+        ]
+      },
+      {
+        "title": "Derechos de los usuarios",
+        "content": [
+          {
+            "type": "list",
+            "text": "Acceso, rectificación, supresión,"
+          },
+          {
+            "type": "list",
+            "text": "Oposición al tratamiento,"
+          },
+          {
+            "type": "list",
+            "text": "Portabilidad,"
+          },
+          {
+            "type": "list",
+            "text": "Contacto para ejercer sus derechos."
+          }
+        ]
+      },
+      {
+        "title": "Seguridad",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Medidas técnicas y organizativas para proteger los datos."
+          }
+        ]
+      },
+      {
+        "title": "Cookies",
+        "content": [
+          {
+            "type": "list",
+            "text": "Uso limitado,"
+          },
+          {
+            "type": "list",
+            "text": "Consentimiento requerido."
+          }
+        ]
+      },
+      {
+        "title": "Contacto",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Correo electrónico: {e} para cualquier consulta relacionada con el RGPD."
+          }
+        ]
+      }
+    ]
   }
+
 }

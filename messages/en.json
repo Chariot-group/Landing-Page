@@ -408,5 +408,122 @@
         ]
       }
     ]
+  },
+  "legalNotice": {
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Chariot is committed to protecting users’ personal data."
+          }
+        ]
+      },
+      {
+        "title": "Collected Data",
+        "content": [
+          {
+            "type": "list",
+            "text": "Identification data,"
+          },
+          {
+            "type": "list",
+            "text": "Connection data,"
+          },
+          {
+            "type": "list",
+            "text": "Data related to service usage."
+          }
+        ]
+      },
+      {
+        "title": "Purposes",
+        "content": [
+          {
+            "type": "list",
+            "text": "Account management,"
+          },
+          {
+            "type": "list",
+            "text": "Service delivery,"
+          },
+          {
+            "type": "list",
+            "text": "Marketing (with consent),"
+          },
+          {
+            "type": "list",
+            "text": "Service improvement."
+          }
+        ]
+      },
+      {
+        "title": "Data Retention Period",
+        "content": [
+          {
+            "type": "list",
+            "text": "Data is retained for as long as necessary for the intended purpose,"
+          },
+          {
+            "type": "list",
+            "text": "Compliance with legal obligations."
+          }
+        ]
+      },
+      {
+        "title": "User Rights",
+        "content": [
+          {
+            "type": "list",
+            "text": "Access, rectification, deletion,"
+          },
+          {
+            "type": "list",
+            "text": "Objection to processing,"
+          },
+          {
+            "type": "list",
+            "text": "Data portability,"
+          },
+          {
+            "type": "list",
+            "text": "Contact for exercising rights."
+          }
+        ]
+      },
+      {
+        "title": "Security",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Technical and organizational measures to protect data."
+          }
+        ]
+      },
+      {
+        "title": "Cookies",
+        "content": [
+          {
+            "type": "list",
+            "text": "Limited use,"
+          },
+          {
+            "type": "list",
+            "text": "Consent required."
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Email: {e} for any GDPR-related inquiries."
+          }
+        ]
+      }
+    ]
   }
+
 }
