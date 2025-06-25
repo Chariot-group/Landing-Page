@@ -28,7 +28,7 @@ export function Footer() {
           <Link href={`/legalNotice`} className="hover:underline underline-offset-2">
             {t("legalNotice")}
           </Link>
-          <Link href={`/TOS`} className="hover:underline underline-offset-2">
+          <Link href={`/privacyPolicy`} className="hover:underline underline-offset-2">
             {t("privacyPolicy")}
           </Link>
         </div>

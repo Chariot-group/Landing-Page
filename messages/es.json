@@ -524,6 +524,106 @@
         ]
       }
     ]
+  },
+  "privacyPolicy": {
+    "sections": [
+      {
+        "title": "Editor del sitio",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El sitio web de Chariot {a} es editado por:"
+          },
+          {
+            "type": "list",
+            "text": "Nombre del editor: CHARIOT"
+          },
+          {
+            "type": "list",
+            "text": "Estatus legal: En trámite"
+          },
+          {
+            "type": "list",
+            "text": "Dirección de la sede: 82B Allée de Barcelone, 31000 Toulouse, Francia"
+          },
+          {
+            "type": "list",
+            "text": "Número SIREN / SIRET: En trámite"
+          },
+          {
+            "type": "list",
+            "text": "Correo electrónico: {e}"
+          },
+          {
+            "type": "list",
+            "text": "Directores de publicación: Elvis PICHOU y Hugo PIEDANNA, futuros presidentes de la SAS CHARIOT"
+          }
+        ]
+      },
+      {
+        "title": "Alojamiento",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El sitio está alojado por:"
+          },
+          {
+            "type": "list",
+            "text": "Proveedor: HOSTINGER"
+          },
+          {
+            "type": "list",
+            "text": "Dirección: 61 Lordou Vironos Street, 6023 Lárnaca, Chipre"
+          },
+          {
+            "type": "list",
+            "text": "Sitio web: https://www.hostinger.com/"
+          },
+          {
+            "type": "list",
+            "text": "Correo de contacto: support@hostinger.com"
+          }
+        ]
+      },
+      {
+        "title": "Propiedad intelectual",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Todos los contenidos del sitio Chariot, incluyendo pero no limitándose a textos, imágenes, gráficos, logotipos, iconos, interfaces, elementos de audio y video, así como el código fuente, están protegidos por la legislación vigente sobre propiedad intelectual y son propiedad exclusiva del editor, salvo mención en contrario."
+          },
+          {
+            "type": "paragraph",
+            "text": "Toda reproducción, distribución, modificación, adaptación, retransmisión o publicación, incluso parcial, está estrictamente prohibida sin el consentimiento previo por escrito del editor."
+          }
+        ]
+      },
+      {
+        "title": "Responsabilidad",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El editor hace todo lo posible para proporcionar en el sitio Chariot información lo más precisa posible. No obstante, no se hace responsable de omisiones, inexactitudes o deficiencias en la actualización, ya sea por su causa o por parte de terceros."
+          },
+          {
+            "type": "paragraph",
+            "text": "El usuario reconoce disponer de la capacidad y los medios necesarios para acceder y utilizar este sitio. También reconoce haber verificado que su configuración informática no contiene virus y que está en perfecto estado de funcionamiento."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pueden existir enlaces hacia otros sitios distintos al de Chariot. El editor no se hace responsable del contenido de dichos sitios externos."
+          }
+        ]
+      },
+      {
+        "title": "Datos personales",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Para cualquier información sobre la recopilación y el tratamiento de sus datos personales, consulte nuestra Política de Privacidad."
+          }
+        ]
+      }
+    ]
   }
-
 }

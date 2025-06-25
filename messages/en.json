@@ -524,6 +524,106 @@
         ]
       }
     ]
+  },
+  "privacyPolicy": {
+    "sections": [
+      {
+        "title": "Website Publisher",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The Chariot website {a} is published by:"
+          },
+          {
+            "type": "list",
+            "text": "Publisher name: CHARIOT"
+          },
+          {
+            "type": "list",
+            "text": "Legal status: In progress"
+          },
+          {
+            "type": "list",
+            "text": "Head office address: 82B Allée de Barcelone, 31000 Toulouse, France"
+          },
+          {
+            "type": "list",
+            "text": "SIREN / SIRET number: In progress"
+          },
+          {
+            "type": "list",
+            "text": "Email address: {e}"
+          },
+          {
+            "type": "list",
+            "text": "Publishing directors: Elvis PICHOU & Hugo PIEDANNA, future presidents of CHARIOT SAS"
+          }
+        ]
+      },
+      {
+        "title": "Hosting",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The website is hosted by:"
+          },
+          {
+            "type": "list",
+            "text": "Host: HOSTINGER"
+          },
+          {
+            "type": "list",
+            "text": "Address: 61 Lordou Vironos Street, 6023 Larnaca, Cyprus"
+          },
+          {
+            "type": "list",
+            "text": "Website: https://www.hostinger.com/"
+          },
+          {
+            "type": "list",
+            "text": "Contact email: support@hostinger.com"
+          }
+        ]
+      },
+      {
+        "title": "Intellectual Property",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "All content on the Chariot website—including but not limited to text, images, graphics, logos, icons, interfaces, audio and video elements, as well as source code—is protected by intellectual property laws and is the exclusive property of the publisher, unless otherwise stated."
+          },
+          {
+            "type": "paragraph",
+            "text": "Any reproduction, distribution, modification, adaptation, retransmission, or publication, even partial, is strictly prohibited without prior written consent from the publisher."
+          }
+        ]
+      },
+      {
+        "title": "Liability",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The publisher strives to provide the most accurate information possible on the Chariot website. However, it cannot be held responsible for omissions, inaccuracies, or update failures, whether caused by itself or third parties."
+          },
+          {
+            "type": "paragraph",
+            "text": "The user acknowledges having the skills and resources necessary to access and use this website. They also confirm that their IT setup is virus-free and in proper working condition."
+          },
+          {
+            "type": "paragraph",
+            "text": "Hyperlinks may redirect to websites other than Chariot. The publisher declines any responsibility for the content of those external sites."
+          }
+        ]
+      },
+      {
+        "title": "Personal Data",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For any information regarding the collection and processing of your personal data, please refer to our Privacy Policy."
+          }
+        ]
+      }
+    ]
   }
-
 }

@@ -25,7 +25,25 @@ export function Legals({ name }: LegalsProps) {
             sections.content.map((content, contentIndex) => (
               content.type === "list" ? (
                 <ul key={contentIndex} className="list-disc pl-6 mb-2">
-                  <li>{content.text}</li>
+                  <li>
+                    {content.text.includes('{a}') && (
+                      <React.Fragment>
+                        {content.text.split("{a}")[0]}
+                        <a className="hover:underline underline-offset-2" href={process.env.NEXT_PUBLIC_APP_URL}>{process.env.NEXT_PUBLIC_APP_URL}</a>
+                        {content.text.split("{a}")[1]}
+                      </React.Fragment>
+                    )}                  
+                    {content.text.includes('{e}') && (
+                      <React.Fragment>
+                        {content.text.split("{e}")[0]}
+                        <a className="hover:underline underline-offset-2" href={`mailto:${process.env.RECEIVER_EMAIL}`}>{process.env.RECEIVER_EMAIL}</a>
+                        {content.text.split("{e}")[1]}
+                      </React.Fragment>
+                    )}
+                    {!content.text.includes('{e}') && !content.text.includes('{a}') && (
+                      content.text
+                    )}
+                  </li>
                 </ul>
               ) : (
                 <p key={contentIndex} className="mb-2">
