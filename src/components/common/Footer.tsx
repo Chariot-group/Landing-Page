@@ -2,6 +2,7 @@
 
 import { scrollToSection } from "@/components/common/Header";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -18,18 +19,18 @@ export function Footer() {
           </h1>
         </div>
         <div className="w-full flex flex-col gap-2 justify-left items-end">
-          <a
-            href="#"
-            target="_blank"
-            className="hover:underline underline-offset-2">
-            {t("CGV")}
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            className="hover:underline underline-offset-2">
-            {t("CGU")}
-          </a>
+          <Link href={`/TOU`} className="hover:underline underline-offset-2">
+            {t("TOU")}
+          </Link>
+          <Link href={`/TOS`} className="hover:underline underline-offset-2">
+            {t("TOS")}
+          </Link>
+          <Link href={`/TOS`} className="hover:underline underline-offset-2">
+            {t("legalNotice")}
+          </Link>
+          <Link href={`/TOS`} className="hover:underline underline-offset-2">
+            {t("privacyPolicy")}
+          </Link>
         </div>
       </div>
     </section>

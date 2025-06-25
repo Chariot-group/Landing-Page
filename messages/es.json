@@ -114,12 +114,174 @@
     "thanks": "¡Disfrute de CHARIOT!"
   },
   "footer": {
-    "CGV": "TCG",
-    "CGU": "UGC"
+    "TOU": "TCU",
+    "TOS": "CGV",
+    "legalNotice": "Aviso legal",
+    "privacyPolicy": "Política de privacidad"
   },
   "NotFound": {
     "title": "Fallo crítico, página no encontrada",
     "description": "Tirada de localización: 1. El oso lechuza se queda mirando el cartel... pero el cartel no responde.",
     "backToHome": "Volver a la página de inicio"
+  },
+  "TOU": {
+    "sections": [
+      {
+        "title": "Artículo 1 - Objeto",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Estas Condiciones Generales de Uso (CGU) tienen como objetivo definir las condiciones de acceso y uso de la aplicación Chariot ofrecida por CHARIOT, accesible a través del sitio web {a}."
+          },
+          {
+            "type": "paragraph",
+            "text": "Chariot es un servicio en línea dedicado a apoyar a los Maestros del Juego (MJ) en la gestión de campañas de Dungeons & Dragons (D&D)."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 2 - Aceptación de las CGU",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El usuario reconoce haber leído y aceptado sin reservas estas CGU antes de utilizar el servicio."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 3 - Descripción del servicio",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El servicio ofrece una versión freemium para crear, organizar y gestionar campañas, así como opciones de pago con funciones avanzadas."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 4 - Registro y acceso",
+        "content": [
+          {
+            "type": "list",
+            "text": "El acceso a las funcionalidades requiere la creación de una cuenta de usuario."
+          },
+          {
+            "type": "list",
+            "text": "El usuario se compromete a proporcionar información precisa."
+          },
+          {
+            "type": "list",
+            "text": "El usuario es responsable de la confidencialidad de sus credenciales."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 5 - Uso permitido y prohibido",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "El usuario se compromete a no:"
+          },
+          {
+            "type": "list",
+            "text": "utilizar el servicio con fines ilegales o contrarios a las CGU,"
+          },
+          {
+            "type": "list",
+            "text": "infringir los derechos de terceros,"
+          },
+          {
+            "type": "list",
+            "text": "interferir con el funcionamiento del servicio,"
+          },
+          {
+            "type": "list",
+            "text": "intentar acceder a áreas restringidas del servicio."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 6 - Propiedad intelectual",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Chariot y su contenido (diseño, código, logotipos, etc.) son propiedad exclusiva de CHARIOT."
+          },
+          {
+            "type": "paragraph",
+            "text": "El contenido generado por el usuario le pertenece, pero este concede a CHARIOT un derecho de uso limitado para permitir el funcionamiento del servicio."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 7 - Datos personales",
+        "content": [
+          {
+            "type": "list",
+            "text": "El tratamiento de datos personales se describe en la Política de Privacidad."
+          },
+          {
+            "type": "list",
+            "text": "El usuario tiene derechos de acceso, modificación y supresión de sus datos."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 8 - Responsabilidad",
+        "content": [
+          {
+            "type": "list",
+            "text": "CHARIOT se compromete a proporcionar un servicio fiable pero no puede garantizar una disponibilidad del 100%."
+          },
+          {
+            "type": "list",
+            "text": "El uso del servicio es bajo la responsabilidad del usuario."
+          },
+          {
+            "type": "list",
+            "text": "La responsabilidad de CHARIOT está limitada a casos de negligencia grave o conducta intencionada."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 9 - Modificación del servicio y de las CGU",
+        "content": [
+          {
+            "type": "list",
+            "text": "CHARIOT puede modificar las CGU y el servicio en cualquier momento."
+          },
+          {
+            "type": "list",
+            "text": "El usuario será informado por correo electrónico o notificación."
+          },
+          {
+            "type": "list",
+            "text": "El uso continuado del servicio implica la aceptación de dichas modificaciones."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 10 - Duración y terminación",
+        "content": [
+          {
+            "type": "list",
+            "text": "El usuario puede eliminar su cuenta en cualquier momento."
+          },
+          {
+            "type": "list",
+            "text": "CHARIOT puede suspender o eliminar una cuenta en caso de violación de las CGU."
+          }
+        ]
+      },
+      {
+        "title": "Artículo 11 - Ley aplicable y litigios",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Estas CGU se rigen por la legislación francesa. En caso de disputa, los tribunales competentes serán los del domicilio social de CHARIOT."
+          }
+        ]
+      }
+    ]
   }
+
 }
